@@ -13,6 +13,15 @@ public:
 	float Scal2V(Vector v1);
 	float VectYmn2V(Vector v1);
 	float LengthVec();
+	Vector(float valuex, float valuey)
+	{
+		x = valuex;
+		y = valuey;
+	}
+	~Vector()
+	{
+		std::cout << std::endl << "Destructor"<<std::endl;
+	}
 private:
 	float x, y;
 };
