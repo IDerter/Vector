@@ -16,4 +16,5 @@ int main()
     std::cout << "Vec proizved: " <<"0 0 "<< v1.VectYmn2V(v2) << std::endl;
     std::cout << "Vec 1 length: " << v1.LengthVec() << std::endl;
     std::cout << "Vec 2 length: " << v2.LengthVec()<<std::endl;
+   
 }

@@ -6,6 +6,7 @@
 
 class Vector 
 {
+	float x, y;
 public:
 	void SetVec(float x, float y);
 	float GetVecX();
@@ -13,17 +14,22 @@ public:
 	float Scal2V(Vector v1);
 	float VectYmn2V(Vector v1);
 	float LengthVec();
-	Vector(float valuex, float valuey)
+	Vector(float valuex = 2 , float valuey = 3)
 	{
 		x = valuex;
 		y = valuey;
+	}
+	Vector(const Vector& obj) //constructor copy
+	{
+		x = obj.x;
+		y = obj.y;
 	}
 	~Vector()
 	{
 		std::cout << std::endl << "Destructor"<<std::endl;
 	}
-private:
-	float x, y;
+
+
 };
 
 
